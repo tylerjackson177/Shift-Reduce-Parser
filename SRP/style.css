@@ -1,0 +1,138 @@
+/* ==== Base theme ==== */
+body {
+    background-color: #fafafa;      
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 1rem;
+  }
+  
+  h1, h2 {
+    margin: 0.2rem 0;
+  }
+  
+  /* ==== Layout ==== */
+  .container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  /* ==== Tables ==== */
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 4px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    background-color: #fff;          /* white background */
+  }
+  
+  caption {
+    caption-side: top;
+    padding: 0.5rem;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  thead th {
+    background-color: #e0e0e0;       /* header background */
+    color: #111;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #f7f7f7;       /* stripe even rows */
+  }
+  
+  td, th {
+    border: 1px solid #ccc;          /* lighter gray borders */
+    padding: 0.6rem;
+    text-align: left;
+    color: #222;
+  }
+  
+  /* ==== Grammar box ==== */
+  .grammarBox {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    max-width: 300px;
+    padding: 0.75rem;
+    border-radius: 4px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    color: #222;
+  }
+  
+  /* ==== Controls ==== */
+  .controls {
+    margin-top: 1rem;
+  }
+  
+  .controls input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.6rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    color: #222;
+    background-color: #fff;
+  }
+  
+  .buttons button {
+    margin-right: 0.5rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #ddd;
+    color: #111;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  .buttons button:hover {
+    background-color: #ccc;
+  }
+  
+  /* ==== Dark mode ==== */
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: #18181a;
+      color: #ddd;
+    }
+    table {
+      background-color: #222;
+      box-shadow: 0 0 10px #000;
+    }
+    thead th {
+      background-color: #333;
+      color: #fff;
+    }
+    tbody tr:nth-child(even) {
+      background-color: #1f1f21;
+    }
+    td, th {
+      border-color: #444;
+      color: #ddd;
+    }
+    .grammarBox {
+      background-color: #222;
+      border-color: #444;
+      box-shadow: 0 0 10px #000;
+      color: #ddd;
+    }
+    .controls input {
+      background: #1f1f21;
+      border-color: #444;
+      color: #ddd;
+    }
+    .buttons button {
+      background: #333;
+      color: #ddd;
+    }
+    .buttons button:hover {
+      background: #444;
+    }
+  }
+  
